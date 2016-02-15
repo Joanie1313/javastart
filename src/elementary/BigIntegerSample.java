@@ -4,6 +4,7 @@
  odejmowania i mnożenia, a także podniesienie do potęgi(zobacz w API jaki typ 
  parametru przyjmuje ta funkcja) i wartość bezwzględną. Wszystkie wyniki 
  zaprezentuj w konsoli.
+*test
  */
 package elementary;
 import java.math.BigInteger;
