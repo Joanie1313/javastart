@@ -33,7 +33,7 @@ import java.util.HashSet;
  * @author asia
  */
 public class Kolekcje {
-     public static void main(String[] args) throws IOException {
+     public static void main(String[] args)throws IOException    {
          ArrayList<String> lista = new ArrayList<String>();
          
          HashSet<String> zbior = new HashSet<String>();
@@ -45,10 +45,11 @@ public class Kolekcje {
          lista.add(wpis);
          zbior.add(wpis);
          }
-         
+         System.out.println("LISTA");
          for (String element : lista) {
              System.out.println(lista);
          }
+         System.out.println("ZBIOR");
          for (String element : zbior) {
              System.out.println(zbior);
          }
@@ -57,12 +58,13 @@ public class Kolekcje {
          String usun = reader.readLine();
          lista.remove(usun);
          zbior.remove(usun);
-         
+         System.out.println("LISTA");
          for (String element : lista) {
-             System.out.println(lista);
+             System.out.println(element);
          }
+         System.out.println("ZBIOR");
          for (String element : zbior) {
-             System.out.println(zbior);
+             System.out.println(element);
          }
          
          
