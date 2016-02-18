@@ -47,11 +47,25 @@ public class Kolekcje {
          }
          
          for (String element : lista) {
-             System.out.println();
+             System.out.println(lista);
          }
          for (String element : zbior) {
-             System.out.println();
+             System.out.println(zbior);
          }
+         
+         System.out.println("Podaj element, który ma zostać usunięty");
+         String usun = reader.readLine();
+         lista.remove(usun);
+         zbior.remove(usun);
+         
+         for (String element : lista) {
+             System.out.println(lista);
+         }
+         for (String element : zbior) {
+             System.out.println(zbior);
+         }
+         
+         
      }
     
 }
