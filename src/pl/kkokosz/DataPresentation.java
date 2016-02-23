@@ -5,9 +5,9 @@
 
 
 
-1. wzkoryzstac konstruktor mojej klasy tak, zeby nie tworzyc obiektu 
-bufferedreader przy kolejnych wywolaniach
-czyli przechowywac wartosc buffered reader w polu klasy
+ 1. wzkoryzstac konstruktor mojej klasy tak, zeby nie tworzyc obiektu 
+ bufferedreader przy kolejnych wywolaniach
+ czyli przechowywac wartosc buffered reader w polu klasy
  */
 package pl.kkokosz;
 
@@ -18,20 +18,21 @@ package pl.kkokosz;
 public class DataPresentation {
 
     public static void main(String[] args) {
-
-        System.out.println("Dzień dobry. Podaj swoje imię:");
-
         PobierzWartosc data = new PobierzWartosc();
+        
+        
+        System.out.println("Dzień dobry. Podaj swoje imię:");
         String name = data.stringValue();
 
         System.out.println("Podaj swój wiek:");
         int age = data.intValue();
+
         System.out.println("Ile zarabiasz:");
         Double salary = data.doubleValue();
-        
-        System.out.println (name);
-        System.out.println (age);
-        System.out.println (salary);
+
+        System.out.println(name);
+        System.out.println(age);
+        System.out.println(salary);
     }
 
 }
