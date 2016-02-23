@@ -24,7 +24,7 @@ public class PobierzWartosc {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             String wpis = reader.readLine();
-            tekst = wpis;
+            //tekst = wpis;
             return wpis.trim();
         } catch (IOException e) {
             System.out.println(":(");
@@ -35,11 +35,11 @@ public class PobierzWartosc {
     public Integer intValue() { //wersja z INteger
         // public int intValue() {          //wersja z int i domyślną wartością 0
         boolean enter;
-        //String text = stringValue(); 
-        enter = "".equals(tekst);
+        String text = stringValue(); 
+        enter = "".equals(text);
         if (!enter) {
             try {
-                return Integer.parseInt(tekst);
+                return Integer.parseInt(text);
             } catch (NumberFormatException e) {
                 System.out.println("NumberFormatException: " + e);
             }
@@ -52,11 +52,11 @@ public class PobierzWartosc {
 
     public double doubleValue() {
         boolean enter;
-        //String text = stringValue();
-        enter = "".equals(tekst);
+        String text = stringValue();
+        enter = "".equals(text);
         if (!enter) {
             try {
-                return Double.parseDouble(tekst.replace(",", "."));
+                return Double.parseDouble(text.replace(",", "."));
             } catch (NumberFormatException e) {
                 System.out.println("NumberFormatException: " + e);
             }
