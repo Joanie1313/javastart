@@ -18,11 +18,20 @@ import java.io.*;
  */
 public class PobierzWartosc {
 
-    String tekst = ""; //globalna - widoczna w ramach pakietu
-
+    String tekst = ""; //globalna - widoczna w ramach pakiet
+    
+    private BufferedReader reader;
+    
+    public PobierzWartosc(){
+    reader = new BufferedReader(new InputStreamReader(System.in));
+    };
+    //konstruktor klasy - nadpisanie jego, bo kazda klasa m swoj konstruktor
+    //mogę mieć wiele konstruktorów
+    //
+    
     public String stringValue() {
         try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            
             String wpis = reader.readLine();
             //tekst = wpis;
             return wpis.trim();
